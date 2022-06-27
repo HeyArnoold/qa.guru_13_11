@@ -5,9 +5,9 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
-import static tests.DataForTests.*;
+import static tests.Data.*;
 
-public class PracticeFormTests extends TestBase {
+class PracticeFormTests extends TestBase {
 
     @Test
     @Owner("Max")
@@ -23,7 +23,7 @@ public class PracticeFormTests extends TestBase {
             practiceForm.openPage();
         });
 
-        step("Зполняем поля web формы", () -> {
+        step("Заполняем поля web формы", () -> {
             practiceForm.setFullName(FIRST_NAME, LAST_NAME)
                     .setEmail(USER_EMAIL)
                     .setGender(GENDER)

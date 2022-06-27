@@ -1,11 +1,11 @@
 package tests;
 
 import com.github.javafaker.Faker;
-import utils.*;
+import helpers.utils.RandomUtils;
 
-public class DataForTests {
-    private static Faker faker = new Faker();
-    private static RandomUtils randomUtils = new RandomUtils();
+public class Data {
+    private static final Faker faker = new Faker();
+    private static final RandomUtils randomUtils = new RandomUtils();
 
     public static final String FIRST_NAME = faker.address().firstName();
     public static final String LAST_NAME = faker.address().lastName();
