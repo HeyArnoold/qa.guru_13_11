@@ -10,12 +10,17 @@ repositories {
     mavenCentral()
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
 def junitVersion = "5.8.2",
     allureVersion = "2.18.1",
     selenideVersion = "6.6.3",
     slf4jVersion = "1.7.36",
     fakerVersion = "1.0.2"
-
 
 tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
