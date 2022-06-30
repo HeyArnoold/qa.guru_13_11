@@ -10,12 +10,6 @@ repositories {
     mavenCentral()
 }
 
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(11)
-    }
-}
-
 def junitVersion = "5.8.2",
     allureVersion = "2.18.1",
     selenideVersion = "6.6.3",
