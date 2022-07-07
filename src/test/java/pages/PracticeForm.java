@@ -97,15 +97,15 @@ public class PracticeForm {
 
     public PracticeForm setStateAndCity(String state, String city) {
         stateElement.click();
-        $(byText(state)).click();
+        $(byText(state)).scrollTo().click();
         cityElement.click();
-        $(byText(city)).click();
+        $(byText(city)).scrollTo().click();
 
         return this;
     }
 
     public PracticeForm submit() {
-        submitElement.click();
+        submitElement.scrollTo().click();
 
         return this;
     }
